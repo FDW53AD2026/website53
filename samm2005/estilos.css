@@ -1,0 +1,20 @@
+h2 {
+    background-color: violet;
+    width: fit-content;
+    border-radius: 12px;
+}
+
+p {
+    font-size: 20px;
+    color: gray;
+}
+body{
+    margin: 40px;
+    background-color: rgb(255, 246, 253);
+}
+
+h1 {
+    background-color: pink;
+    font-size: 50px;
+    width: fit-content;
+}
