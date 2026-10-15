@@ -6,21 +6,24 @@
     <title>Evidencia 2 práctica 1</title>
 </head>
 <body>
+    <article>
+        <h2>Calcular Sueldo</h2>
+    </article>
     <form action="">
         <label for="turno">Turno</label>
         <input type="text" name="turno" id="turno"><br>
 
         <label for="horas">Horas</label>
-        <input type="text" name="horas" id="horas"><br>
+        <input type="number" name="horas" id="horas"><br>
 
         <label for="pago">Pago por hora</label>
-        <input type="text" name="pago" id="pago"><br>
+        <input type="number" name="pago" id="pago"><br>
 
         <label for="sueldo">Sueldo</label>
         <input readonly type="text" name="sueldo" id="sueldo"><br>
 
-        <button id="btncalcular">Calculo</button>
-        <button id="btnlimpiar">Limpiar</button>
+        <button type="button" id="btncalcular">Calcular</button>
+        <button type="button" id="btnlimpiar">Limpiar</button>
     </form>
     <script src="javascript/p1.js"></script>
 </body>
