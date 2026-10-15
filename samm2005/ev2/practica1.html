@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora sueldo</title>
+    <style>
+        form {
+            padding: 10px;
+            background-color: rgb(164, 238, 238);
+            font-size:30px;
+            width: 40vw;
+        }
+        h1 {
+            font-size: 40px;
+            color: rgb(126, 19, 19);
+        }
+        button {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 >&hearts;Practica 1 &hearts;</h1>
+    <hr>
+<form action="">
+    <label for="turno">Turno de trabajo(m,v,n): </label>
+    <input type="text" name="turno" id="turno"> <br>
+
+    <label for="horas">Horas trabajadas:     </label>
+    <input type="text" name="horas" id="horas"><br>
+
+    <label for="pago por hora">Pago por hora:     </label>
+    <input type="text" name="pago"  id="pago"><br>
+
+    <label for="sueldo">Sueldo total:     </label>
+    <input readonly type="text" name="sueldo" id="sueldo"><br>
+    
+    <button id="calcular">Calcular</button> 
+    <button id="limpiar">Limpiar</button>
+
+</form>
+
+<hr>
+<script src="p1.js"></script>
+
+</body>
+</html>

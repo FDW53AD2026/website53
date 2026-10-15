@@ -1,0 +1,180 @@
+/*aqui quitamos todo el estilo de margenes y padding de la pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*le aplico al cuerpo de la pagina una fuente de letra un color de fondo blanco color de letra 
+y un min de altura de 100vh que ocupe el 100% de la altura de la ventana */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eeeeee;
+    color: #333333;
+    min-height: 100vh;
+}
+
+
+/* header y sus hijos  */
+
+.header {
+    text-align: center;
+    padding: 70px 20px 50px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.header h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #252525;
+    margin-bottom: 12px;
+}
+
+.header p {
+    font-size: 16px;
+    color: #777777;
+}
+
+
+/*contenedores */
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+
+/* tarjetas que puse apra mostrar mis tareas*/
+
+.practicas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.tarjeta {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 14px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease; /*este efecto es el que hace la sombra de la tarjeta*/
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.10);
+}
+
+
+/*para los span que llevan la classe numero */
+
+.numero {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 7px 12px;
+    background: #e7e7e7;
+    color: #555555;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/*titulo*/
+
+.tarjeta h2 {
+    font-size: 22px;
+    color: #292929;
+    margin-bottom: 12px;
+}
+
+.tarjeta p {
+    color: #777777;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+/* loinks */
+
+.enlaces {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.enlaces a {
+    text-decoration: none;
+    text-align: center;
+    padding: 11px 15px;
+    border-radius: 8px;
+    background: #eeeeee;
+    color: #444444;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.enlaces a:hover {
+    background: #333333;
+    color: #ffffff;
+}
+
+
+/*pie de pagina*/
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 1px solid #d8d8d8;
+    color: #888888;
+    font-size: 14px;
+}
+
+
+/*prueba para responsivo en dispositivos medianos como ipads*/
+
+@media (max-width: 850px) {
+
+    .practicas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* prueba para responsivo en dispositivos pequeños como celulares */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 50px 20px 40px;
+    }
+
+    .header h1 {
+        font-size: 32px;
+    }
+
+    .header p {
+        font-size: 14px;
+    }
+
+    .contenedor {
+        width: 92%;
+        margin: 30px auto;
+    }
+
+    .practicas {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta {
+        padding: 25px;
+    }
+
+}
