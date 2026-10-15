@@ -29,32 +29,12 @@
         </div>
 
         <div>
-            <button class="btn-calcular" onclick="calcularSueldo()">Calcular</button>
-            <button class="btn-limpiar" onclick="limpiarFormulario()">Limpiar</button>
+            <button class="btnCalcular">Calcular</button>
+            <button class="btnLimpiar">Limpiar</button>
         </div>
     </div>
 
-    <script>
-        function calcularSueldo() {
-            // Obtenemos los valores de los inputs de horas y pago por hora
-            let horas = parseFloat(document.getElementById('horas').value) || 0;
-            let pagoHora = parseFloat(document.getElementById('pagoHora').value) || 0;
-            
-            // Realizamos la multiplicación
-            let sueldo = horas * pagoHora;
-            
-            // Mostramos el resultado en el input de sueldo
-            document.getElementById('sueldo').value = sueldo;
-        }
-
-        function limpiarFormulario() {
-            // Limpiamos todos los campos del formulario
-            document.getElementById('turno').value = '';
-            document.getElementById('horas').value = '';
-            document.getElementById('pagoHora').value = '';
-            document.getElementById('sueldo').value = '';
-        }
-    </script>
+    <script src="CalculadoraSueldo.js"></script>
 
 </body>
 </html>
