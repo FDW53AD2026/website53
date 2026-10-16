@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 1</title>
+</head>
+<body>
+    <h2>Práctica 1</h2>
+    <p>Crear una aplicación para el cálculo del sueldo de un trabajador.</p>
+
+    <form>
+        <fieldset style="width: 300px;">
+            <p>
+                <label for="turno">Turno:</label>
+                <input type="text" id="turno">
+            </p>
+            <p>
+                <label for="horas">Horas trabajadas:</label>
+                <input type="text" id="horas">
+            </p>
+            <p>
+                <label for="pago">Pago por hora:</label>
+                <input type="text" id="pago">
+            </p>
+            <p>
+                <label for="sueldo">Sueldo:</label>
+                <input type="text" id="sueldo" readonly>
+            </p>
+            <p>
+                <button id="btnCalcular">Calcular</button>
+                <button id="btnLimpiar">Limpiar</button>
+            </p>
+        </fieldset>
+    </form>
+
+    <script src="javascript/app.js"></script>
+</body>
+</html>
