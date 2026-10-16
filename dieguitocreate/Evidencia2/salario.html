@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Sueldo</title>
+</head>
+<body>
+
+    <div class="Calculadora">
+        <div>
+            <label for="turno">Turno</label>
+            <input type="text" id="turno" value="matutino">
+        </div>
+
+        <div>
+            <label for="horas">Horas</label>
+            <input type="number" id="horas" value="1">
+        </div>
+
+        <div>
+            <label for="pagoHora">Pago por Hora</label>
+            <input type="number" id="pagoHora" value="5">
+        </div>
+
+        <div>
+            <label for="sueldo">Sueldo</label>
+            <input type="number" id="sueldo" value="5" readonly>
+        </div>
+
+        <div>
+            <button class="btnCalcular">Calcular</button>
+            <button class="btnLimpiar">Limpiar</button>
+        </div>
+    </div>
+
+    <script src="CalculadoraSueldo.js"></script>
+
+</body>
+</html>
