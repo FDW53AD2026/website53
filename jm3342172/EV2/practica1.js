@@ -31,4 +31,6 @@ btnLimpiar.addEventListener("click", e => {
     inputHoras.value = "";
     inputPagoHora.value = "";
     inputSueldo.value = "";
+
+
 });
