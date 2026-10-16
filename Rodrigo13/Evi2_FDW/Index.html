@@ -6,43 +6,43 @@
     <title>Práctica 1 [Calculadora Pagó de Turno] </title>
 </head>
 <body>
-    <link rel="stylesheet" href="Style2.css">
+  <link rel="stylesheet" href="Style2.css">
+
+    <h1>Calculadora de Sueldo</h1>
+ 
+    <form action="">
+ 
+        <label for="TURNOS">Turnos:</label>
+        <input type="text" list="ListaDeTurnos" id="TURNOS" name="TURNOS" >
+        
+        <datalist id="ListaDeTurnos"> <br>
+            <option value="Nocturno/Noche"></option>
+            <option value="Vespertino/Tarde"></option>
+            <option value="Matutino/Mañana"></option>
+        </datalist> <br>
+
+        <label for="HORAS">Horas:</label>
+        <input type="number" name="HORAS" id="HORAS"> 
+        
+        <br><br>
+
+        <label for="PAYFHOUR">Pago por Hora</label>
+        <input type="number" name="PAYFHOUR" id="PAYFHOUR"> 
+        
+        <br><br>
+        
+        <label for="SUELDO">Sueldo:</label>
+        <input type="text" name="SUELDO" id="SUELDO" > 
+        
+        <br><br>
+
+        <button id="CALCULANDO">Calcular</button>
+        <button id="LIMPIADO">Limpiar</button>
+
+    </form>
+
     <Script src ="Script2.js"></Script>
-    <div class="container">
-        <header>
-            <h1>Calculación de pago salarial</h1>
-        </header>
-        <main>
-            <section>
-                <p class="pageformat">Calculadora de horas extras, Turno y Sueldo .</p>
-                <div class="formsect">
-                    <form action="">
-                        <div>
-                            <label for="shift">Turno:</label>
-                            <input type="text" id="shift" name="shift">
-                        </div>
-                        <div>
-                            <label for="hours">Horas:</label>
-                            <input type="text" id="hours" name="hours">
-                        </div>
-                        <div>
-                            <label for="pay">Pago por Hora:</label>
-                            <input type="text" id="pay" name="pay">
-                        </div>
-                        <div>
-                            <label for="salary">Sueldo:</label>
-                            <input type="text" id="salary" name="salary">
-                        </div>
-                        <div class="btnsect">
-                            <button id="btncal" name="btncal">Calcular</button>
-                            <button id="btnclear" name="btnclear">Limpiar</button>
-                        </div>
-                    </form>
-                </div>
-            </section>
-        </main>
-    </div>
-     
-    
+
 </body>
 </html>
+
