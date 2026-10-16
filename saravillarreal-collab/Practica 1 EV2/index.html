@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sueldos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Calcular Sueldo</h1>
+    <form action="">
+        <label for="turno">Turno:</label>
+        <input type="text" name="turno" id="turno"><br>
+
+        <label for="horas">Horas:</label>
+        <input type="number" name="horas" id="horas"><br>
+
+        <label for="pago">Pago por hora:</label>
+        <input type="number" name="pago" id="pago" value="5" step="any"><br>
+        
+        <label for="sueldo">Sueldo:</label>
+        <input type="number" name="sueldo" id="sueldo" step="any" readonly><br>
+
+        <button id="btnCalcular">Calcular</button>
+        <button id="btnLimpiar">Limpiar</button>
+    </form>
+
+    <script src="sueldo.js"></script>
+</body>
+</html>
