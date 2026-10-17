@@ -35,7 +35,7 @@ btnLimpiar.addEventListener("click", e => {
 
     inputTurno.value = "";
     inputHoras.value = "";
-    inputPago.value = "5";
+    inputPago.value = "";
     outputSueldo.value = "";
 
     inputTurno.focus();
