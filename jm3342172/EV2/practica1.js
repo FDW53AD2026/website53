@@ -32,5 +32,7 @@ btnLimpiar.addEventListener("click", e => {
     inputPagoHora.value = "";
     inputSueldo.value = "";
 
-
+inputTurno.focus();
 });
+
+// ppg
