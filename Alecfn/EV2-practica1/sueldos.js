@@ -1,3 +1,4 @@
+//Se me borraron los commits por un error de un archivo fantasma//
 const turno = document.getElementById ("turno");
 const horas = document.getElementById("horas");
 const pago = document.getElementById("pago");
