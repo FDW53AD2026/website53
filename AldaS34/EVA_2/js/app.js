@@ -24,7 +24,7 @@ btnCalc.addEventListener("click", e =>{
 btnLimpiar.addEventListener("click", e=>{
     e.preventDefault();
 
-     turno.value = ""
+     turno.value = "Matutino"
      horas.value = ""
      PxH.value = ""
      sueldo.value = ""
