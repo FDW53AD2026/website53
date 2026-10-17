@@ -1,32 +1,42 @@
-const InputTurnos = document.getElementById("TURNOS"); 
+const InputTurnos = document.getElementById("TURNOS");
 const InputHoras = document.getElementById("HORAS");
-const InputPayForHour = document.getElementById("PAYFHOUR"); 
-const Sueldos = document.getElementById("SUELDO"); 
+const InputPayForHour = document.getElementById("PAYFHOUR");
+const Sueldos = document.getElementById("SUELDO");
+
 const BtnCalculando = document.getElementById("CALCULANDO");
-const BtnLimpiando =document.getElementById("LIMPIADO");
+const BtnLimpiando = document.getElementById("LIMPIADO");
 
-BtnCalculando.addEventListener("click", e =>{
- 
-  e.preventDefault(); 
+BtnCalculando.addEventListener("click", (e) => {
 
-  let seleccionando_Turnos =  InputTurnos.value; 
+    e.preventDefault();
 
-  console.log("Botono funcionando"); 
+    let turno = InputTurnos.value;
+    let horas = parseFloat(InputHoras.value);
+    let pagoHora = parseFloat(InputPayForHour.value);
 
-  let Incremento = seleccionando_Turnos == "Vespertino/Tarde" ? 0.03 
-                    :seleccionando_Turnos == "Nocturno/Noche"? 1
-                    :0;
-  let InputPayForHour_Ended = parseFloat(InputPayForHour.value) + (InputPayForHour.value * Incremento);
-   Sueldos.value = InputHoras.value * InputPayForHour_Ended;               
-}); 
+    let incremento = 0;
 
-BtnLimpiando.addEventListener("Click", e=>{
-    e.preventDefault(); 
-     
-     InputTurnos.value = ""
-     InputHoras.value = ""
-     InputPayForHour.value = ""
-     Sueldos.Sueldos= ""
+    if (turno === "Vespertino/Tarde") {
+        incremento = 0.03;
+    } 
+    
+    else if (turno === "Nocturno/Noche") {
+        incremento = 1;
+    }
 
+    let pagoFinal = pagoHora + (pagoHora * incremento);
 
-}); 
+    let sueldo = horas * pagoFinal;
+
+    Sueldos.value = sueldo;
+});
+
+BtnLimpiando.addEventListener("click", (e) => {
+
+    e.preventDefault();
+
+    InputTurnos.value = "";
+    InputHoras.value = "";
+    InputPayForHour.value = "";
+    Sueldos.value = "";
+});
