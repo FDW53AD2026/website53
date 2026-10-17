@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Sueldo</title>
+    <!-- Fuente de google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+
+    <div class="contenedor-card">
+        <h2>Calculadora de Sueldo</h2>
+        <form>
+            <div class="fila">
+                <label for="turno">Turno de trabajo</label>
+                <select id="turno">
+                    <option value="matutino">Matutino (Normal)</option>
+                    <option value="vespertino">Vespertino (+3%)</option>
+                    <option value="nocturno">Nocturno (+100%)</option>
+                </select>
+            </div>
+
+            <div class="fila-doble">
+                <div class="fila">
+                    <label for="horas">Horas</label>
+                    <input type="number" id="horas" placeholder="Ej. 8" min="0">
+                </div>
+                <div class="fila">
+                    <label for="pagoHora">Pago x Hora ($)</label>
+                    <input type="number" id="pagoHora" placeholder="Ej. 50" min="0">
+                </div>
+            </div>
+
+            <div class="fila">
+                <label for="sueldo">Sueldo Total ($)</label>
+                <input type="text" id="sueldo" readonly placeholder="0.00">
+            </div>
+
+            <div class="botones">
+                <button id="btnLimpiar">Limpiar</button>
+                <button id="btnCalcular">Calcular Sueldo</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/scripts2.js"></script>
+</body>
+</html>

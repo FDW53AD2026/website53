@@ -9,12 +9,11 @@
     <h1>Calculadora de Sueldo</h1>
     <form action="">
         <label for="turno">Turno:</label>
-        <input type="text" list="turnos" id="turno" name="turno" placeholder="n/a">
-        <datalist id="turnos">
-            <option value="Matutino"></option>
-            <option value="Vespertino"></option>
-            <option value="Nocturno"></option>
-        </datalist> <br>
+        <select id="turno" name="turno" placeholder="n/a">
+            <option value="Matutino">Matutino</option>
+            <option value="Vespertino">Vespertino</option>
+            <option value="Nocturno">Nocturno</option>
+        </select> <br>
 
         <label for="horas">Horas:</label>
         <input type="number" name="horas" id="horas" placeholder="0"> <br>
