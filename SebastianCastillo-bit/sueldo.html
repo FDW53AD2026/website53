@@ -3,42 +3,56 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculo de sueldo</title>
 </head>
 <body>
 
     <h2>Calculo de sueldo de un trabajador</h2>
 
-    <label>Turno:</label>
+    <label for="turno">Turno:</label>
     <select id="turno">
-        <option value="diurno">Diurno</option>
+        <option value="diurno">Matutino</option>
         <option value="vespertino">Vespertino</option>
         <option value="nocturno">Nocturno</option>
     </select>
+
     <br><br>
 
-    <label>Horas trabajadas:</label>
+    <label for="horas">Horas trabajadas:</label>
     <input type="number" id="horas" min="0" step="any">
+
     <br><br>
 
-    <label>Pago por hora:</label>
+    <label for="pago">Pago por hora:</label>
     <input type="number" id="pago" min="0" step="any">
+
     <br><br>
 
-    <label>Sueldo:</label>
+    <label for="sueldo">Sueldo:</label>
     <input type="text" id="sueldo" readonly>
+
     <br><br>
 
-    <button onclick="calcularSueldo()">Calcular</button>
+    <button type="button" onclick="calcularSueldo()">Calcular</button>
+    <button type="button" onclick="limpiar()">Limpiar</button>
 
     <script>
         function calcularSueldo() {
             let turno = document.getElementById("turno").value;
-            let horas = Number(document.getElementById("horas").value);
-            let pago = Number(document.getElementById("pago").value);
+            let horasTexto = document.getElementById("horas").value;
+            let pagoTexto = document.getElementById("pago").value;
 
-            if (horas <= 0 || pago <= 0) {
+            let horas = Number(horasTexto);
+            let pago = Number(pagoTexto);
+
+            if (horasTexto.trim() === "" ||
+                pagoTexto.trim() === "" ||
+                !Number.isFinite(horas) ||
+                !Number.isFinite(pago) ||
+                horas <= 0 || pago <= 0) {
                 alert("Ingresa horas y pago validos");
+                document.getElementById("sueldo").value = "";
                 return;
             }
 
@@ -52,6 +66,13 @@
 
             document.getElementById("sueldo").value =
                 sueldo.toFixed(2);
+        }
+
+        function limpiar() {
+            document.getElementById("turno").value = "diurno";
+            document.getElementById("horas").value = "";
+            document.getElementById("pago").value = "";
+            document.getElementById("sueldo").value = "";
         }
     </script>
 
