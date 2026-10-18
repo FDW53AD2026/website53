@@ -23,12 +23,7 @@ btnCalcular.addEventListener("click", e => {
     let horas = parseFloat(inputHoras.value);
     let pagoHora = parseFloat(inputPagoHora.value);
     let turno = selectTurno.value;
-
-    if (isNaN(horas) || isNaN(pagoHora) || horas <= 0 || pagoHora < 0) {
-        alert("Ingresa una cantidad válida de horas y pago por hora.");
-        return;
-    }
-
+    
     let pagoHoraAjustado = pagoHora;
 
     if (turno === "Vespertino") {
