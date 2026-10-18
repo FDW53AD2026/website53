@@ -24,6 +24,7 @@ btnCalcular.addEventListener("click", e => {
     let pagoHora = parseFloat(inputPagoHora.value);
     let turno = selectTurno.value;
     
+
     let pagoHoraAjustado = pagoHora;
 
     if (turno === "Vespertino") {
