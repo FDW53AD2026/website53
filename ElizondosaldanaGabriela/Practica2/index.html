@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Practica 2</title>
-    </head>
-    <body>
-        <h2>Practica 2</h2>
-        <p>Web para dibujar triangulos y rectangulos</p>
-
-        <div>
-            <p>Figura:
-                <select> id="figura"
-                    <option> value="triangulo">Triangulo></option>
-                    <option> value="rectangulo">Rectangulo></option>
-                </select>
-            </p>
-
-            <p>Caracter <input type="text" id="caracter" maxlength="1" value="*"></p>
-
-            <p id="divBase" style="display:none">
-            base <input type="number" id="altura" id="base" min="1">
-            </p>
-
-            <p>Altura <input type="number" id="altura" min="1" value="3"></p>
-
-            <button id="btnMostrar">Mostrar</button>
-
-            <pre id="resultado"></pre>
-        </div>
-        <script src="practica2.js"></script>
-    </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 2</title>
+</head>
+<body>
+    <h2>Practica 2</h2>
+    <p>Web para dibujar triangulos y rectangulos</p>
+ 
+    <div>
+        <p>Figura:
+            <select id="figura">
+                <option value="triangulo">Triangulo</option>
+                <option value="rectangulo">Rectangulo</option>
+            </select>
+        </p>
+ 
+        <p>Caracter <input type="text" id="caracter" maxlength="1" value="*"></p>
+ 
+        <p id="divBase" style="display:none">
+            Base <input type="number" id="base" min="1">
+        </p>
+ 
+        <p>Altura <input type="number" id="altura" min="1" value="3"></p>
+ 
+        <button id="btnMostrar">Mostrar</button>
+ 
+        <pre id="resultado"></pre>
+    </div>
+ 
+    <script src="practica2.js"></script>
+</body>
 </html>
