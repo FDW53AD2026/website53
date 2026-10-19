@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculo de sueldo</title>
+  </head>
+  <body>
+    <h1>Calculo del sueldo de un trabajador</h1>
+
+    <fieldset style="width: 320px">
+      <p>
+        Turno:
+        <select id="turno">
+          <option value="matutino">Matutino</option>
+          <option value="vespertino">Vespertino</option>
+          <option value="nocturno">Nocturno</option>
+        </select>
+      </p>
+      <p>Horas trabajadas: <input type="text" id="horas" /></p>
+      <p>Pago por hora: <input type="text" id="pago" /></p>
+      <p>Sueldo: <input type="text" id="sueldo" readonly /></p>
+      <p><button onclick="calcular()">Calcular</button></p>
+    </fieldset>
+
+    <script>
+      function calcular() {
+        var turno = document.getElementById("turno").value;
+        var horas = parseFloat(document.getElementById("horas").value);
+        var pago = parseFloat(document.getElementById("pago").value);
+
+        if (isNaN(horas) || isNaN(pago)) {
+          alert("Captura las horas trabajadas y el pago por hora.");
+          return;
+        }
+
+        if (turno == "vespertino") {
+          pago = pago * 1.03;
+        } else if (turno == "nocturno") {
+          pago = pago * 2;
+        }
+
+        var sueldo = horas * pago;
+        document.getElementById("sueldo").value = sueldo.toFixed(2);
+      }
+    </script>
+  </body>
+</html>
