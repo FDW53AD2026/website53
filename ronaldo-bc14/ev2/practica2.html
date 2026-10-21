@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practiva 2</title>
+</head>
+<body>
+    <form>
+        <label for="figura">Figura:</label>
+        <select name="figura"id="figura">
+            <option value="triangulo">Triangulo</option>
+            <option value="rectangulo">Rectangulo</option>
+
+        </select>
+
+        <br><br>
+
+        <label for="caracter">Caracter:</label>
+        <input type="text" name="caracter" id="caracter"><br>
+
+        <div id="campoBase" style="display: none;">
+            <label for="base">Base:</label>
+            <input type="number" name="base" id="base" min="1"><br>
+        </div>
+        <label for="altura">Altura</label>
+        <input type="number" name="altura" id="altura" min="1"><br>
+        <button type="button" id="btnMostrar">Mostrar</button>
+    </form>
+    <pre id="result"></pre>
+    <script src="prac2.js"></script>
+</body>
+</html>
