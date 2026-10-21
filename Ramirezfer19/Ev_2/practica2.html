@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evidencia 2</title>
+</head>
+<body>
+    <h1>Practica 2 Ev2</h1>
+    <h2>Figuras con caracteres</h2>
+    
+    <form action="">
+            <label for="figura">Figura:</label>
+            <select name="figura" id="figura" required>
+                <option value="" selected disabled>Selecciona una figura</option>
+                <option value="triangulo">Triangulo</option>
+                <option value="rectangulo">Rectangulo</option>
+            </select><br><br>
+
+            <label for="caracter">Caracter</label>
+            <input type="text" name="caracter" id="caracter" maxlength="1"><br><br>
+
+            <div id="divAltura">
+                <label for="altura">Altura</label>
+                <input type="number" name="altura" id="altura" min="1"><br><br>
+            </div>
+
+            <div id="divBase">
+                <label for="base">Base</label>
+                <input type="number" name="base" id="base" min="1"><br><br>
+            </div>
+
+            <button type="button" id="mostrar">Mostrar</button>
+
+            <h3>Resultado</h3>
+
+            <ul id="salida"></ul>
+
+    </form>
+    
+    
+
+</body>
+</html>
