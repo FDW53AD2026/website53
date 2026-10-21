@@ -1,0 +1,26 @@
+
+
+body {
+    font-family: Arial;
+    background-color: pink;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+
+button {
+    background-color: pink;
+    padding: 5px;
+}
+
+

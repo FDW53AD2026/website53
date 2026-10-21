@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Crear Figuras</h1>
+    <form action="">
+        <label for="figura">Figura:</label>
+        <select name="figura" id="figura">
+            <option value="triangulo">Triángulo</option>
+            <option value="rectangulo">Rectángulo</option>
+        </select>
+
+        <label for="caracter">Caracter:</label>
+        <input type="text" name="caracter" id="caracter"><br><br>
+        
+        <div id="campoAltura">
+            <label for="altura">Altura:</label>
+            <input type="number" name="altura" id="altura"><br><br>
+        </div>
+        <br>
+
+        <div id="campoBase" hidden>
+        <label for="base">Base:</label>
+        <input type="number" name="base" id="base">
+        </div>
+        <br>
+
+        <button type="button" id="btnMostrar">Mostrar</button>
+    </form>
+
+    <pre id="resultado"></pre>
+
+    <script src="figuras.js">
+    </script>
+</body>
+</html>

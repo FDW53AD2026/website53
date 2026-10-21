@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="">
+    <title>Formulario Figuras</title>
+
+
+</head>
+<body>
+    <h1> Figuras</h1><br>
+    <form action="">
+        <label for="Texto">Figura:</label>
+        <select id="Figura">
+            <option value="triangulo">Triangulo</option>
+            <option value="rectangulo">Rectangulo</option>
+          </select><br><br>
+
+
+        <label for="Horas">Caracter:</label>
+        <input type="Text" name="caracter" id="caracter"></input><br><br>
+
+        <label for="Texto">Altura:</label>
+        <input type="Text" name="altura" id="altura"></input><br><br>
+
+        <div id="divBase" style="display:none;">
+            <label for="base">Base:</label>
+            <input type="number" id="base"><br><br>
+        </div>
+
+        <button type="button" id="btnMostrar">Dibujar</button>
+
+    </form>
+
+    <p id="Resultado" style="white-space: pre;"></p>
+    <script src="figura.js"></script>
+
+</body>
+</html>

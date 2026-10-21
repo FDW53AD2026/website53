@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora de Sueldo</h1>
+    <form action="">
+        <label for="turno">Turno:</label>
+        <select id="turno" name="turno" placeholder="n/a">
+            <option value="Matutino">Matutino</option>
+            <option value="Vespertino">Vespertino</option>
+            <option value="Nocturno">Nocturno</option>
+        </select> <br>
+
+        <label for="horas">Horas:</label>
+        <input type="number" name="horas" id="horas" placeholder="0"> <br>
+
+        <label for="PxH">Pago por Hora</label>
+        <input type="number" name="PxH" id="PxH" placeholder="0"> <br>
+
+        <label for="sueldo">Sueldo:</label>
+        <input type="text" name="sueldo" id="sueldo" readonly placeholder="0"> <br>
+
+        <button id="calcular">Calcular</button>
+        <button id="limpiar">Limpiar</button>
+
+    </form>
+    <script src="js/app.js"></script>
+</body>
+</html>

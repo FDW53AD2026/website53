@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Calculator app</h1>
+        </header>
+        <main>
+            <section>
+                <p class="pageformat">This is a simple calculator to do simple operations.</p>
+                <div class="formsect">
+                    <form action="">
+                        <div>
+                            <label for="first">First number:</label>
+                            <input type="text" id="first" name="first">
+                        </div>
+                        <div>
+                            <label for="second">Second number:</label>
+                            <input type="text" id="second" name="second">
+                        </div>
+                        <div>
+                            <label for="ope">Operation:</label>
+                            <select name="ope" id="ope">
+                                <option value="1">+</option>
+                                <option value="2">-</option>
+                                <option value="3">*</option>
+                                <option value="4">/</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="output">Output:</label>
+                            <input type="text" id="output" name="output">
+                        </div>
+                        <div class="btnsect">
+                            <button id="btncal" name="btncal">Calculate</button>
+                            <button id="btnclear" name="btnclear">Clear</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
