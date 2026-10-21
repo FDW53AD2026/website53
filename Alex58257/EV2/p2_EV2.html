@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibujo de triángulos o rectángulos Alex Balderas</title>
+
+    <style>
+        #resultado {
+            white-space: pre;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dibujo de triángulos o rectángulos</h1>
+    <form action="">
+        <label for="figura">Figuras a elegir</label>
+        <select name="figura" id="figura">
+            <option value="1">Triángulo</option>
+            <option value="2">Rectángulo</option>
+        </select><br><br>
+
+    <label for="caracter">Caracter</label>
+    <input type="text" name="caracter" id="caracter"><br><br>
+
+    <label for="altura">Altura</label>
+    <input type="number" name="altura" id="altura"><br><br>
+
+    <button id="btnMostrar">Mostrar</button>
+    </form>
+    
+    <div id="resultado"></div>
+    <script src="javascript/p2.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: rgb(43, 90, 59);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+h1{
+   border: 2px solid rgb(92, 85, 44);
+   justify-content: center;
+    background-color: rgb(33, 36, 33);
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.pageformat{
+    border: 2px solid rgb(92, 85, 44);
+   justify-content: center;
+    background-color: rgb(33, 36, 33);
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+p.pageformat{
+    font-size: x-large;
+}
+
+footer{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.formsect{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div.formsect form{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 50%;
+    width: 50%;
+    background-color: rgb(79, 141, 115);
+} 
+
+div.formsect label{
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 20px;
+    font-size:x-large;
+    text-align: left;
+}
+
+div.formsect select{
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 20px;
+    font-size:x-large;
+    text-align: left;
+}
+
+div.formsect input{
+    height: 25px;
+    width: 200px;
+}
+
+div.btnsect{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div.btnsect button{
+    margin-right: 40px;
+    margin-top: 40px;
+    height: 40px;
+    width: 90px;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    background-color: rgb(33, 36, 33);
+    border: 2px solid rgb(92, 85, 44);
+}
