@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibujar figuras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 29px;
+        }
+        .campo {
+            margin-bottom: 12px;
+        }
+        label {
+            display: inline-block;
+            width: 80px;
+        }
+        input, select {
+            padding: 4 px;
+        }
+        pre {
+            font-family: monospace;
+            font-size: 18px;
+            background-color: #dd9df7;
+            padding: 10px;
+            border: 1px solid #efc2fa;
+            border-radius: 4px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h2>Aplicacion para dibujar figuras</h2>
+
+    <div class="campo">
+        <label for="figura">Figura:</label>
+        <select id="figura" onchange="cambiarFigura()">
+            <option value="triangulo">Triángulo</option>
+            <option value="rectangulo">Rectángulo</option>
+        </select>
+    </div>
+
+    <div class="campo" id="grupoBase" style="display: none;">
+        <label for="base">Base:</label>
+        <input type="number" id="base" min="1" value="5">
+    </div>
+    <div class="campo">
+        <label for="altura">Altura:</label>
+        <input type="number" id="altura" min="1" value="3">
+    </div>
+
+    <button onclick="dibujarFigura()">Mostrar</button>
+
+    <h3>Resultado:</h3>
+    <pre id="resultado"></pre>
+
+    <script src="figuras.js"></script>
+</body>
+</html>
