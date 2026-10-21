@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h5>Dibuja Formas</h5>
+    <form action="">
+        <label for="forma">Figura:</label>
+        <select name="forma" id="forma">
+            <option value="Tri">Triangulo</option>
+            <option value="Rec">Rectangulo</option>
+        </select> <br><br>
+        
+        <label for="caracter">Caracter</label>
+        <input type="text" name="caracter" id="caracter" maxlength="1"><br><br>
+
+        <label for="altura">Altura</label>
+        <input type="text" name="altura" id="altura"><br><br>
+
+        <label for="base" id="label_base" hidden>Base</label>
+        <input type="text" name="base" id="base" hidden> <br><br>
+
+        <button id="mostrar">Mostrar</button><br>
+        
+    </form>
+    <figure id="salida"></figure>
+    <script src="js/app.js"></script>
+</body>
+</html>
