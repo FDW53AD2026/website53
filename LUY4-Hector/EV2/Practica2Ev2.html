@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="DiseñoPractica2.css"></link>
 </head>
 <body>
     <h1>Triangulos y Rectangulos</h1>
     <form action="">
         <label for="figura">Figura</label>
         <select name="figura" id="figure">
-            <option value="1">Triangulo</option>
-            <option value="2">Rectangulo</option>
+            <option value="triangulo">Triangulo</option>
+            <option value="rectangulo">Rectangulo</option>
         </select><br>
 
         <label for="Caracter">Caracter</label>
@@ -23,6 +24,8 @@
 
         <button id="btnMostrar">Mostrar</button>
 
+        <h3><Strong>Resultado</Strong></h3>
+        <pre id="result"></pre> <!--pre para mantener los saltos en linea en lugar de ul-->
     </form>
     <script src="js/practica2.js">
     </script>
