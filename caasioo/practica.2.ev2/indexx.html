@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Práctica 2 - Triángulos y rectángulos</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 2rem; color: #1d1d1d; }
+    form { display: inline-block; padding: 1rem 1.25rem; border: 1px solid #ccc; border-radius: 6px; min-width: 18rem; }
+    .campo { display: flex; align-items: center; gap: .5rem; margin-bottom: .75rem; }
+    .campo label { width: 5rem; }
+    input, select { padding: .3rem .4rem; font: inherit; }
+    button { padding: .4rem .9rem; font: inherit; cursor: pointer; }
+    pre { font-family: "Courier New", monospace; line-height: 1.2; margin: 1rem 0 0; overflow-x: auto; }
+    #error { color: #b00020; margin-top: .75rem; min-height: 1.2em; }
+    .oculto { display: none; }
+  </style>
+</head>
+<body>
+  <h1>Dibujar figuras</h1>
+
+  <form id="formulario" novalidate>
+    <div class="campo">
+      <label for="figura">Figura:</label>
+      <select id="figura">
+        <option value="triangulo">Triángulo</option>
+        <option value="rectangulo">Rectángulo</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="caracter">Carácter:</label>
+      <input type="text" id="caracter" maxlength="1" value="*">
+    </div>
+    <div class="campo oculto" id="grupoBase">
+      <label for="base">Base:</label>
+      <input type="number" id="base" min="1" step="1">
+    </div>
+    <div class="campo">
+      <label for="altura">Altura:</label>
+      <input type="number" id="altura" min="1" step="1">
+    </div>
+    <button type="button" id="mostrar">Mostrar</button>
+    <div id="error" role="alert"></div>
+    <pre id="resultado"></pre>
+  </form>
+
+  <script src="CFiguras.js"></script>
+</body>
+</html>
