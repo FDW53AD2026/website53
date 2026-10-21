@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 2 - Evidencia 2</title>
+</head>
+<body>
+
+    <h1>Práctica 2</h1>
+
+    <div style="border: 1px solid #aaa; padding: 15px; width: 280px; border-radius: 4px;">
+        <label for="figura">Figura: </label>
+        <select id="figura" onchange="actualizarCampos()">
+            <option value="Triangulo">Triangulo</option>
+            <option value="Rectangulo">Rectangulo</option>
+        </select>
+        <br><br>
+
+        <label for="caracter">Carácter: </label>
+        <input type="text" id="caracter" value="*" size="3">
+        <br><br>
+
+        <!-- Campo Base (oculto por defecto para Triángulo) -->
+        <div id="divBase" style="display: none;">
+            <label for="base">Base: </label>
+            <input type="number" id="base" value="5" min="1">
+            <br><br>
+        </div>
+
+        <label for="altura">Altura: </label>
+        <input type="number" id="altura" value="3" min="1">
+        <br><br>
+
+        <button type="button" onclick="dibujarFigura()">Mostrar</button>
+
+        <br><br>
+        <!-- Dibujo de la figura -->
+        <pre id="resultado" style="font-family: monospace; font-size: 16px; margin: 0; line-height: 1.2;"></pre>
+    </div>
+
+    <!-- Enlace a tu script de JS -->
+    <script src="figura.js"></script>
+</body>
+</html> 
