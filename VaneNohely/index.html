@@ -1,41 +1,57 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dibujar Figuras</title>
+    <link rel="stylesheet" href="diseño.css">
 </head>
 <body>
-    <h1>Mis practicas </h1>
 
-    <h2>Practica 1</h2>
-    <p>Crear página en cuenta personal de Github.</p>
-    <a href="https://github.com/VanessaNohely/clase-escuela">Link Repositorio:</a><br>
-    <a href="https://vanessanohely.github.io/clase-escuela/">Link Sitio Publicado:</a><br>
-    <a href="https://github.com/VanessaNohely/clase-escuela/commits/main/">Link Commits:</a>
+    <h1>Dibujar Triángulos y Rectángulos</h1>
+    <h2>Evidencia 2, practica 2</h2>
 
-    <h2>Practica 2</h2>
-    <p>Crear un repositorio en su cuenta personal. Desarrollar un sitio web sobre una actividad o pasatiempo de su interés.</p>
-    <a href="https://github.com/VanessaNohely/Practica-2">Link Repositorio:</a><br>
-    <a href="https://vanessanohely.github.io/Practica-2/">Link Sitio Publicado:</a><br>
-    <a href="https://github.com/VanessaNohely/Practica-2/commits/main/">Link Commits:</a>
+    <form id="formulario">
+        <label for="figura">Figura:</label>
+        <select id="figura" name="figura">
+            <option value="triangulo">Triángulo</option>
+            <option value="rectangulo">Rectángulo</option>
+        </select>
 
-    <h2>Practica 3</h2>
-    <p>En esta práctica se trabajará en la organización FDW53AD2026. En la organización se encuentra un repositorio llamado “website53”. Se solicita que clone el repositorio en su computadora y cree una carpeta con el nombre de su usuario de github. En la carpeta se debe agregar un archivo html con el nombre index.html</p>
-    <a href="https://github.com/FDW53AD2026/website53/commits?author=VanessaNohely">Link Commits:</a>
+        <br>
 
-    <h2>Practica 4</h2>
-    <p>Modificar el archivo index.html (del grupo) y agregar un link hacia su página personal. Asignar a la etiqueta "a" el id</p>
-    <a href="https://github.com/FDW53AD2026/website53/commits?author=VanessaNohely">Link Commits:</a>
+        <label for="caracter">Carácter:</label>
+        <input type="text" id="caracter" maxlength="1" value="*"
+               required>
 
-    <h2>Practica 5</h2>
-    <p>Agregar en su página personal los links hacia todas las prácticas realizadas. (Mantener está página actualizada).</p>
-    <a href="https://github.com/VanessaNohely/clase-5 ">Link Commits:</a>
+        <br>
 
-    <h1>EVIDENCIA 2 </h1>
-    <p>Descripción: Crear una aplicación para el cálculo del sueldo de un trabajador. El usuario ingresará las horas trabajadas, el pago por hora y el turno del trabajador. Al presionar el botón se calculará sueldo. Si el turno es vespertino aumentar un 3% el pago por hora y si es turno nocturno aumentar el 100% el pago por hora.</p>
-    <a href="https://fdw53ad2026.github.io/website53/VaneNohely/index%20%28EV2%29.html">Link Sitio:</a><br>
-    <a href="https://github.com/FDW53AD2026/website53/commits?author=VanessaNohely">Link commits:</a><br>
 
+<div id="campo-base">
+    <label for="base">Base:</label>
+    <input type="number" id="base" min="1" max="100" required>
+    <br>
+</div>
+
+<div id="campo-altura">
+    <label for="altura">Altura:</label>
+    <input type="number" id="altura" min="1" max="100" required>
+    <br>
+</div>
+
+
+        <button type="button" id="dibujar">Dibujar</button>
+        <button type="button" id="limpiar">Limpiar</button>
+
+        <br><br>
+
+        <label for="resultado">Resultado:</label>
+        <br>
+        <textarea id="resultado" rows="12" cols="35"
+                  readonly></textarea>
+    </form>
+
+    <script src="java.js"></script>
 </body>
 </html>
