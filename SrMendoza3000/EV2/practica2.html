@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dibujar figuras</title>
+  </head>
+  <body>
+    <h1>Dibujar triangulos o rectangulos</h1>
+
+    <fieldset style="width: 320px">
+      <p>
+        Figura:
+        <select id="figura" onchange="cambiarFigura()">
+          <option value="triangulo">Triangulo</option>
+          <option value="rectangulo">Rectangulo</option>
+        </select>
+      </p>
+      <p>Caracter <input type="text" id="caracter" value="*" size="3" /></p>
+      <p id="pBase" style="display: none">
+        Base <input type="text" id="base" />
+      </p>
+      <p>Altura <input type="text" id="altura" /></p>
+      <p><button onclick="mostrar()">Mostrar</button></p>
+      <pre id="salida"></pre>
+    </fieldset>
+
+    <script>
+      function cambiarFigura() {
+        var figura = document.getElementById("figura").value;
+        var pBase = document.getElementById("pBase");
+
+        if (figura == "rectangulo") {
+          pBase.style.display = "block";
+        } else {
+          pBase.style.display = "none";
+        }
+
+        document.getElementById("salida").textContent = "";
+      }
+
+      function mostrar() {
+        var figura = document.getElementById("figura").value;
+        var caracter = document.getElementById("caracter").value;
+        var altura = parseInt(document.getElementById("altura").value);
+        var texto = "";
+
+        if (caracter == "") {
+          alert("Captura el caracter que se va a usar.");
+          return;
+        }
+
+        if (isNaN(altura) || altura <= 0) {
+          alert("Captura una altura valida.");
+          return;
+        }
+
+        if (figura == "triangulo") {
+          for (var i = 1; i <= altura; i++) {
+            for (var j = 1; j <= i; j++) {
+              texto = texto + caracter;
+            }
+            texto = texto + "\n";
+          }
+        } else {
+          var base = parseInt(document.getElementById("base").value);
+
+          if (isNaN(base) || base <= 0) {
+            alert("Captura una base valida.");
+            return;
+          }
+
+          for (var i = 1; i <= altura; i++) {
+            for (var j = 1; j <= base; j++) {
+              texto = texto + caracter;
+            }
+            texto = texto + "\n";
+          }
+        }
+
+        document.getElementById("salida").textContent = texto;
+      }
+    </script>
+  </body>
+</html>
