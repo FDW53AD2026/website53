@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibujador de figuras</title>
+</head>
+<body>
+    <h1>Aplicación para dibujar figuras</h1>
+    <div>
+        <label for="figura">Figura</label>
+        <select id="figura">
+            <option value="rectangulo">Rectángulo</option>
+            <option value="triangulo">Triángulo</option>
+        </select>
+
+        <br><label for="caracter">Carácter</label>
+        <input type="text" id="caracter" name="caracter" maxlength="1" required>
+
+        <fieldset>
+            <legend>Dimensiones</legend>
+            <div id="campoBase">
+                <label for="base">Base</label>
+                <input type="number" id="base" name="base" min="1" step="1">
+            </div>
+            <label for="altura">Altura</label>
+            <input type="number" id="altura" name="altura" min="1" step="1">
+        </fieldset>
+    </div>
+
+    <button id="dibujar" type="button">Dibujar</button>
+    <button id="limpiar" type="button">Limpiar</button>
+    <pre id="resultado" aria-live="polite"></pre>
+
+    <script src="CalculadoraArea.js"></script>
+</body>
+</html>
+        
