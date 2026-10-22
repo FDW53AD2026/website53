@@ -1,0 +1,39 @@
+
+body {
+    font-family: Arial;
+    background-color: lightgray;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    background-color: white;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+}
+
+input {
+    margin: 5px;
+    padding: 5px;
+}
+
+select {
+    margin: 5px;
+    padding: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 8px;
+    background-color: steelblue;
+    color: white;
+    border: none;
+}
+
+#dibujo {
+    margin-top: 15px;
+    font-family: monospace;
+}
