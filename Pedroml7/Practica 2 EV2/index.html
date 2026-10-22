@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 2</title>
+</head>
+<body>
+    <h2>Práctica 2</h2>
+    <p>Crear una aplicación que dibuje triangulos o rectangulos.</p>
+
+    <form>
+        <fieldset style="width: 300px;">
+            <p>
+                <label for="figura">Figura:</label>
+                <select id="figura">
+                    <option value="triangulo">Triangulo</option>
+                    <option value="rectangulo">Rectangulo</option>
+                </select>
+            </p>
+            <p>
+                <label for="caracter">Caracter</label>
+                <input type="text" id="caracter">
+            </p>
+            <p id="grupoBase" style="display: none;">
+                <label for="base">Base</label>
+                <input type="text" id="base">
+            </p>
+            <p>
+                <label for="altura">Altura</label>
+                <input type="text" id="altura">
+            </p>
+            <p>
+                <button id="btnMostrar">Mostrar</button>
+            </p>
+            <div id="dibujo"></div>
+        </fieldset>
+    </form>
+
+    <script src="p2.js"></script>
+</body>
+</html>

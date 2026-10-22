@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica 2 - Figuras</title>
+</head>
+<body>
+    <h1>Crear una aplicación que dibuje triangulos o rectangulos.</h1>
+    <h2>Dibujar figuras</h2>
+
+    <label>Selecciona la figura:</label>
+    <select id="tipoFigura">
+        <option value="triangulo">Triángulo</option>
+        <option value="rectangulo">Rectángulo</option>
+    </select>
+    <br><br>
+    <label>Carácter:</label>
+    <input type="text" id="simbolo" value="*">
+    <br><br>
+    <div id="opcionBase" style="display: none;">
+        <label>Base:</label>
+        <input type="number" id="columnas">
+        <br><br>
+    </div>
+    <label>Altura:</label>
+    <input type="number" id="filas">
+    <br><br>
+    <button id="dibujar">Dibujar</button>
+    <br><br>
+    <pre id="figuraResultado"></pre>
+    <script src="practica2.js"></script>
+
+</body>
+</html>

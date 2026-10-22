@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 2</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Práctica 2</h1>
+    <h2>Aplicación que dibuja triangulos o rectangulos</h2>
+
+    <label for="figura">Figura:</label>
+    <select name="figura" id="figura">
+        <option value="1">Triangulo</option>
+        <option value="2">Rectangulo</option>
+    </select>
+    <br><br>
+
+    <label for="caracter">Caracter</label>
+    <input type="text" name="caracter" id="caracter">
+    <br><br>
+
+    <div id="contenedorBase" class="oculto">
+        <label for="base">Base: </label>
+        <input type="text" name="base" id="base">
+        <br><br>
+    </div>
+
+    <label for="altura">Altura: </label>
+    <input type="text" name="altura" id="altura">
+    <br><br>
+
+    <button id="btnMostrar">Mostrar</button>
+
+    <pre id="resultado"></pre>
+
+    <script src="javascript/p2.js"></script>
+</body>
+</html>
