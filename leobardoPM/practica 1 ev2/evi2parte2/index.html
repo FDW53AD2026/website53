@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creador de figuras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 25px;
+        }
+        .contenedor {
+            width: 260px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .campo {
+            margin-bottom: 15px;
+        }
+        label {
+            display: inline-block;
+            width: 75px;
+        }
+        input, select {
+            width: 150px;
+            box-sizing: border-box;
+        }
+        #resultado {
+            margin: 15px 0 0 40px;
+            white-space: pre;
+            font-family: monospace;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Practica 2</h1>
+    <p>Cosa para crear triángulos o rectángulos con figuras del teclado.</p>
+
+    <div class="contenedor">
+        <div class="campo">
+            <label for="figura">Figura:</label>
+            <select id="figura">
+                <option value="triangulo">Triángulo</option>
+                <option value="rectangulo">Rectángulo</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="caracter">Carácter:</label>
+            <input type="text" id="caracter" value="*" maxlength="1">
+        </div>
+
+        <div class="campo" id="campoBase" hidden>
+            <label for="base">Base:</label>
+            <input type="number" id="base" min="1" max="50" value="5">
+        </div>
+
+        <div class="campo">
+            <label for="altura">Altura:</label>
+            <input type="number" id="altura" min="1" max="50" value="3">
+        </div>
+
+        <button id="btnMostrar" type="button">Mostrar</button>
+        <button id="btnLimpiar" type="button">Limpiar</button>
+        <pre id="resultado"></pre>
+    </div>
+
+    <script src="evi2parte2/evi2parte2.js"></script>
+</body>
+</html>
