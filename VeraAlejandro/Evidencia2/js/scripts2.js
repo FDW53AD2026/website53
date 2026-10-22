@@ -6,7 +6,6 @@ const outputSueldo = document.getElementById("sueldo");
 const btnCalcular = document.getElementById("btnCalcular");
 const btnLimpiar = document.getElementById("btnLimpiar");
 
-
 btnLimpiar.addEventListener("click", e => {
     e.preventDefault();
     
