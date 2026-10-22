@@ -6,12 +6,11 @@ const inputAltura = document.getElementById("altura");
 const btnMostrar = document.getElementById("btnMostrar");
 const outputResultado = document.getElementById("resultado");
 
-
 selectFigura.addEventListener("change", () => {
     if (selectFigura.value === "Rectangulo") {
-        divBase.classList.remove("oculto");
+        divBase.style.display = "block"; 
     } else {
-        divBase.classList.add("oculto");
+        divBase.style.display = "none";  
     }
 });
 
@@ -25,10 +24,12 @@ btnMostrar.addEventListener("click", e => {
     let dibujo = "";
 
     if (figura === "Triangulo") {
+
         for (let i = 1; i <= altura; i++) {
             dibujo += caracter.repeat(i) + "\n";
         }
     } else if (figura === "Rectangulo") {
+
         for (let i = 0; i < altura; i++) {
             dibujo += caracter.repeat(base) + "\n";
         }
