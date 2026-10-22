@@ -1,27 +1,46 @@
-const inputFigura = document.getElementById("Figura");
-const inputCaracter = document.getElementById("Caracter");
-const inputArea = document.getElementById("Cltura");
-const divResultado = document.getElementById("Resultado");
-const btnMostrar = document.getElementById("btnmostrar");
+const selectFigura = document.getElementById("figura");
+const inputCaracter = document.getElementById("caracter");
+const grupoBase = document.getElementById("grupoBase");
+const inputBase = document.getElementById("base");
+const inputAltura = document.getElementById("altura");
+const btnMostrar = document.getElementById("btnMostrar");
+const divDibujo = document.getElementById("dibujo");
 
-function calculo() {
-    let tipofigura = parseInt(inputFigura.value);
-    let caracter =inputCaracter.value || '*';
-    let altura =parseInt(inputArea.value);
-    let dibujo = "";
+selectFigura.addEventListener("change", e => {
+    if (selectFigura.value === "rectangulo") {
+        grupoBase.style.display = "block";
+    }
+    else {
+        grupoBase.style.display = "none";
+    }
+    divDibujo.innerHTML = "";
+});
 
-if (tipofigura ===1) {
-    for (let i=1; i<=altura; i++) {
-        dibujo += caracter.repeat(i) + '\n';
-    }
-} else if (tipofigura ===2) {
-    let ancho = altura * 2;
-    for (let i = 0; i < altura; i++) {
-        dibujo +=caracter.repeat(ancho) + '\n';
-    }
-}
-divresultado.textContent = dibujo;
-btnMostrar.addEventListener("click", e=> {
+btnMostrar.addEventListener("click", e => {
     e.preventDefault();
-    calculo();
-})
+
+    let figura = selectFigura.value;
+    let caracter = inputCaracter.value;
+    let base = parseInt(inputBase.value);
+    let altura = parseInt(inputAltura.value);
+    let resultado = "";
+
+    if (figura === "triangulo") {
+        for (let i = 1; i <= altura; i++) {
+            for (let j = 1; j <= i; j++) {
+                resultado = resultado + caracter;
+            }
+            resultado = resultado + "<br>";
+        }
+    }
+    else if (figura === "rectangulo") {
+        for (let i = 1; i <= altura; i++) {
+            for (let j = 1; j <= base; j++) {
+                resultado = resultado + caracter;
+            }
+            resultado = resultado + "<br>";
+        }
+    }
+
+    divDibujo.innerHTML = resultado;
+});
