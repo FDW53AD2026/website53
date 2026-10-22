@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibujo de Triangulos o Rectangulos</title>
+
+    <style>
+        #resultado {
+            white-space: pre;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dibujo de triángulos o rectángulos</h1>
+    <label for="figura">Figura:</label>
+
+    <select id="figura">
+        <option value="triangulo">Triangulo</option>
+        <option value="rectangulo">Rectangulo</option>
+    </select><br><br>
+
+    <label for="caracter">Caracter:</label>
+    <input type="text" id="caracter" value="*" maxlength="1"><br><br>
+
+    <div id="campoAltura">
+        <label for="altura">Altura:</label>
+        <input type="text" id="altura">
+    </div>
+
+    <div id="campoBase" hidden>
+        <br>
+        <label for="base">Base:</label>
+        <input type="text" id="base">
+    </div><br>
+
+    <button id="btnMostrar" type="button">Mostrar</button><br><br>
+    <pre id="resultado"></pre>
+
+</body>
+</html>
