@@ -7,8 +7,9 @@
 </head>
 <body>
 <h1>Práctica 2</h1>
-<p>Aplicación que dibuje triangulos o rectangulos.</p>
+<p>Crear una aplicación que dibuje triangulos o rectangulos.</p>
 <form action="">
+
         <label for="figura">Figura:</label>
         <select name="figura" id="figura">
             <option value="Triangulo">Triangulo</option>
@@ -20,8 +21,7 @@
         <input type="text" name="caracter" id="caracter" value="*" size="5">
         <br><br>
 
-<!-- Campo Base (solo se usa en rectángulo) -->
-        <div id="divBase" class="oculto">
+        <div id="divBase" style="display: none;">
             <label for="base">Base</label>
             <input type="text" name="base" id="base" value="3" size="5">
             <br><br>
@@ -30,11 +30,11 @@
         <label for="altura">Altura</label>
         <input type="text" name="altura" id="altura" value="3" size="5">
         <br><br>
+
         <button id="btnMostrar">Mostrar</button>
     </form>
 
     <pre id="resultado"></pre>
-
 
     <script src="practica2.js"></script>
 </body>
