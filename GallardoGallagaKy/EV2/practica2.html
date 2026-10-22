@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>PRACTICA 2</h1>
+
+    <form id="figuraForm">
+        <label for="figura">Figura:</label>
+        <select id="figura">
+            <option value="triangulo">Triangulo</option>
+            <option value="rectangulo">Rectangulo</option>
+        </select>
+        <br>
+
+        <label for="caracter">Caracter:</label>
+        <input type="text" id="caracter" value="*" maxlength="1">
+        <br>
+
+        <div id="grupoBase" style="display: none;">
+            <label for="base">Base:</label>
+            <input type="number" id="base">
+            <br>
+        </div>
+
+        <label for="altura">Altura:</label>
+        <input type="number" id="altura">
+        <br>
+
+        <button type="button" id="btnMostrar">Mostrar</button>
+
+        <div id="dibujo"></div>
+    </form>
+
+    <script src="practica2.js"></script>
+</body>
+</html>
